@@ -49,6 +49,10 @@ body {
   line-height: 1.125em;
 }
 
+.btn:hover {
+  background-color: var(--clr-cyan-light);
+}
+
 .btn {
   background: var(--clr-cyan);
   border: none;
@@ -413,10 +417,6 @@ section {
   margin-top: 13px;
   width: 100%;
   border-radius: var(--btn-radius);
-}
-
-.shortened-item button:hover {
-  background: var(--clr-dark-violet);
 }
 
 @media (min-width: 375px) {
