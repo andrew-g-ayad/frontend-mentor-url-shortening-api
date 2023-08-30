@@ -384,7 +384,6 @@ section {
   top: 37px;
   opacity: 0.3;
   background: var(--clr-gray);
-  background: #000;
 }
 
 .shortened-item .link p,
@@ -576,7 +575,7 @@ section {
   background-color: var(--clr-dark-violet);
   background-image: url('/images/bg-boost-mobile.svg');
   color: var(--white);
-  padding-block: 4rem;
+  padding-block: 3.5rem;
   font-size: 1.55rem;
   font-weight: 700;
 }
@@ -590,6 +589,9 @@ section {
 @media (min-width: 375px) {
   .boost-your-links {
     background-image: url('./images/bg-boost-desktop.svg');
+  }
+  .boost-your-links h2 {
+    font-size: 2rem;
   }
 }
 
