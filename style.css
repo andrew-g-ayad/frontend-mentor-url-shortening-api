@@ -380,6 +380,7 @@ section {
   top: 37px;
   opacity: 0.3;
   background: var(--clr-gray);
+  background: #000;
 }
 
 .shortened-item .link p,
@@ -389,7 +390,7 @@ section {
   text-align: left;
   word-wrap: break-word;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -423,6 +424,10 @@ section {
   .shortened-item .flex-group {
     display: flex;
   }
+  .shortened-item .flex-group,
+  .shortened-item .link {
+    width: 50%;
+  }
   .shortened-item {
     justify-content: space-between;
     align-items: center;
@@ -433,6 +438,19 @@ section {
   .shortened-item .btn-copy,
   .shortened-item .flex-group {
     margin-top: 0;
+  }
+  .shortened-item .flex-group .btn-copy {
+    max-width: 100px;
+  }
+  .shortened-item .flex-group {
+    justify-content: end;
+    gap: 1.5rem;
+  }
+  .shortened-item .flex-group .short-link {
+    font-weight: 900;
+    text-align: right;
+    -webkit-line-clamp: 1;
+    align-self: center;
   }
 }
 
