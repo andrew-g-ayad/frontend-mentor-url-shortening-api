@@ -627,3 +627,28 @@ footer a {
 footer .social-media a {
   padding-inline: 0.5rem;
 }
+
+@media (min-width: 375px) {
+  footer .logo {
+    width: 33%;
+    text-align: left;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container nav {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .footer-container nav ul h4,
+  .footer-container nav ul {
+    margin-top: 0;
+    text-align: left;
+  }
+  .footer-container nav ul li {
+    padding-left: 0;
+    text-align: left;
+  }
+}
