@@ -622,10 +622,15 @@ footer a {
   font-size: 0.9rem;
   font-weight: 500;
   text-transform: capitalize;
+  fill: white;
 }
 
 footer a:hover {
   color: var(--clr-cyan);
+}
+
+footer .social-media a:hover svg {
+  fill: var(--clr-cyan);
 }
 
 footer .social-media a {
