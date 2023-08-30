@@ -65,6 +65,10 @@ body {
   margin: 0 auto;
 }
 
+[data-shape='round-borders'] {
+  border-radius: 100vw;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -128,7 +132,6 @@ header .btn-login {
 }
 
 header .btn-signup {
-  border-radius: 100vw;
   padding: 0.5em;
 }
 header .burger-menu {
@@ -247,7 +250,6 @@ section {
 .hero .btn-get-started {
   font-size: 1.25rem;
   margin-top: 1.5rem;
-  border-radius: 100vw;
   padding: 0.5em 2em;
 }
 
