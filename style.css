@@ -57,6 +57,7 @@ body {
   padding: 0.45em 2em;
   font-size: 1rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .container {
@@ -575,16 +576,21 @@ section {
   background-color: var(--clr-dark-violet);
   background-image: url('/images/bg-boost-mobile.svg');
   color: var(--white);
-  padding-block: 6rem;
+  padding-block: 4rem;
   font-size: 1.55rem;
   font-weight: 700;
 }
 
-.boost-your-links > button {
-  margin-top: 1rem;
+.boost-your-links .btn-boost {
+  margin-top: 1.5rem;
   padding: 0.8em 2.5em;
-  border-radius: 100vw;
   font-size: 1.125rem;
+}
+
+@media (min-width: 375px) {
+  .boost-your-links {
+    background-image: url('./images/bg-boost-desktop.svg');
+  }
 }
 
 footer {
