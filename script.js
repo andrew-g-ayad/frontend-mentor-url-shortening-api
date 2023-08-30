@@ -7,7 +7,6 @@ function handleToggle(e) {
   nav.classList.toggle('toggle-nav');
 }
 
-// Function to handle click outside the div
 function handleClickOutside(event) {
   if (
     !nav.contains(event.target) &&
@@ -18,6 +17,5 @@ function handleClickOutside(event) {
   }
 }
 
-// Attach a click event listener to the document
 document.addEventListener('click', handleClickOutside);
 document.addEventListener('scroll', handleClickOutside);
