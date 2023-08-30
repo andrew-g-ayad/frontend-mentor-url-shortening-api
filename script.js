@@ -1,13 +1,12 @@
 const toggleMenu = document.getElementById('toggle-menu');
 const nav = document.getElementById('nav');
 
-toggleMenu.addEventListener('click', handleToggle);
-
 function handleToggle(e) {
   nav.classList.toggle('toggle-nav');
 }
 
 function handleClickOutside(event) {
+  console.log('moving');
   if (
     !nav.contains(event.target) &&
     event.target !== toggleMenu &&
@@ -19,3 +18,8 @@ function handleClickOutside(event) {
 
 document.addEventListener('click', handleClickOutside);
 document.addEventListener('scroll', handleClickOutside);
+toggleMenu.addEventListener('click', (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  handleToggle();
+});

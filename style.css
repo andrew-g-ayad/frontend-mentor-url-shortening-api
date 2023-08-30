@@ -139,6 +139,7 @@ header .burger-menu {
   margin-left: auto;
   margin-top: -0.5rem;
   padding: 0.5rem;
+  z-index: 10;
 }
 
 header .burger-menu span {
@@ -147,6 +148,7 @@ header .burger-menu span {
   background: var(--clr-gray);
   width: 100%;
   margin-top: 6px;
+  z-index: 5;
 }
 
 header .burger-menu span:nth-child(1) {
