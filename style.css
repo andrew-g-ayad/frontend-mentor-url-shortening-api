@@ -624,6 +624,10 @@ footer a {
   text-transform: capitalize;
 }
 
+footer a:hover {
+  color: var(--clr-cyan);
+}
+
 footer .social-media a {
   padding-inline: 0.5rem;
 }
